@@ -1,0 +1,20 @@
+.swiper-wrapper {
+    height: 300px;
+}
+
+.swiper-wrapper-service {
+    height: 250px;
+}
+
+.swiper-pagination-bullet {
+    background-color: #000;
+    border: 1px solid #FFF62A;
+    opacity: 1;
+    width: 50px;
+    height: 8px;
+    border-radius: 0px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #FFF62A;
+}

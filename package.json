@@ -1,0 +1,40 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
+        "production": "mix --production"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.15",
+        "axios": "^1.1.2",
+        "laravel-mix": "^6.0.49",
+        "laravel-vite-plugin": "^0.7.2",
+        "postcss": "^8.4.28",
+        "tippy.js": "^6.3.7",
+        "vite": "^4.0.0"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^6.4.0",
+        "@popperjs/core": "^2.11.7",
+        "bootstrap": "^5.2.3",
+        "bootstrap-datepicker": "^1.9.0",
+        "daterangepicker": "^3.1.0",
+        "icheck-bootstrap": "^3.0.1",
+        "jquery": "^3.6.4",
+        "less": "^4.1.3",
+        "less-loader": "^11.1.0",
+        "lodash": "^4.17.21",
+        "overlayscrollbars": "^2.1.1",
+        "photoswipe": "^5.3.8",
+        "resolve-url-loader": "^5.0.0",
+        "sass": "^1.62.0",
+        "sass-loader": "^13.2.2",
+        "select2": "*",
+        "swiper": "^9.3.2"
+    }
+}
