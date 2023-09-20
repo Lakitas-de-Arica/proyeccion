@@ -11,7 +11,7 @@
     <div class="container-fluid banner-home">
         <div class="row justify-content-center">
             <div class="col-md-4 text-center">
-                <img src="{{ asset('images/logo.svg') }}" class="img-fluid">
+                <img src="{{ asset('images/logo.svg') }}" class="img-fluid d-none d-sm-block">
             </div>
         </div>
     </div>
@@ -35,7 +35,7 @@
                 <p class="text-center text-home">PATROCINA</p>
             </div>
             @foreach ($logos as $logo)
-            <div class="col-md-2">
+            <div class="col-6 col-md-4 col-lg-2 col-xl-2 col-xxl-2 text-center">
                 <img src="{{ asset('images/'.$logo) }}" class="img-fluid">
             </div>
             @endforeach

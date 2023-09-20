@@ -63,6 +63,37 @@ html, body {
     }
 }
 
+.navbar-home {
+    .nav-item a {
+        color: #fff;
+
+        &:hover, &::selection {
+            background-color: transparent;
+        }
+    }
+
+    @media (max-width: 992px) {
+
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+
+        .navbar-collapse {
+            background-color: #fff;
+        }
+
+        .nav-item a {
+            color: #333;
+
+            &:hover, &::selection {
+                background-color: transparent;
+            }
+        }
+    }
+}
+
 footer {
     background-color: #000;
 
@@ -95,7 +126,11 @@ footer {
     background-size: cover;
     padding-top: 200px;
     padding-bottom: 500px;
-    margin-top: -110px;
+    margin-top: -120px;
+
+    @media (max-width: 992px) {
+        margin-top: 0px;
+    }
 }
 
 p.text-home {
@@ -105,4 +140,9 @@ p.text-home {
     font-style: normal;
     font-weight: 400;
     line-height: 40px;
+
+    @media (max-width: 576px) {
+        font-size: 16px;
+        line-height: 25px;
+    }
 }

@@ -1,10 +1,10 @@
 <footer class="container-fluid">
     <div class="container py-5">
         <div class="row justify-content-center">
-            <div class="col-md-12 mb-5">
+            <div class="col-md-12 mb-5 text-center text-md-start">
                 <img src="{{ asset('images/logo-footer.svg') }}" class="img-fluid">
             </div>
-            <div class="col-md-8 text-start">
+            <div class="col-md-8 text-center text-md-start">
                 <p>
                     LAKITAS DE ARICA PROYECCION<br>
                     <a href="mailto:lakitasdearicaproyeccion@gmail.com">lakitasdearicaproyeccion@gmail.com</a><br>
@@ -12,18 +12,18 @@
                     ARICA, CHILE.<br>
                 </p>
             </div>
-            <div class="col-md-4 text-end">
+            <div class="col-md-4 text-center text-md-end">
                 <img src="{{ asset('images/ministerio-cultura-artes-patrimonio.svg') }}" class="img-fluid">
             </div>
-            <div class="col-md-12 text-center pb-4">
+            <div class="col-md-12 text-center text-md-center py-4">
                 <a href="{{ route('credits') }}" class="text-white">Créditos y Agradecimientos</a>
             </div>
         </div>
         <div class="row border-top pt-4">
-            <div class="col-md-6">
+            <div class="col-md-6 text-center text-md-start">
                 <p>© Lakitas Proyección. {{ date('Y') }}</p>
             </div>
-            <div class="col-md-6 text-end">
+            <div class="col-md-6 text-center text-md-end">
                 <a href=""><img src="{{ asset('images/icon-facebook.svg') }}" class="img-fluid"></a>
                 <a href=""><img src="{{ asset('images/icon-instagram.svg') }}" class="img-fluid"></a>
             </div>
