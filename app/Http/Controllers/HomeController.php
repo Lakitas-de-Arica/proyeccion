@@ -23,7 +23,6 @@ class HomeController extends Controller
 
     public function project()
     {
-        return redirect()->route('home');
         return view('project');
     }
 
