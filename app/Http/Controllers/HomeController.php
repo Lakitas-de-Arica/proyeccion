@@ -6,19 +6,19 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
+    protected $sponsorshipLogos = [
+        'lak__1.svg',
+        'lak__2.svg',
+        'lak__3.svg',
+        'lak__4.svg',
+        'lak__5.svg',
+        'lak__6.svg',
+    ];
+
     public function index()
     {
-        $sponsorshipLogos = [
-            'lak__1.svg',
-            'lak__2.svg',
-            'lak__3.svg',
-            'lak__4.svg',
-            'lak__5.svg',
-            'lak__6.svg',
-        ];
-
         return view('home')
-                ->with('logos', $sponsorshipLogos);
+                ->with('logos', $this->sponsorshipLogos);
     }
 
     public function project()
@@ -28,13 +28,11 @@ class HomeController extends Controller
 
     public function story()
     {
-        return redirect()->route('home');
         return view('story');
     }
 
     public function music()
     {
-        return redirect()->route('home');
         return view('music');
     }
 
@@ -52,8 +50,8 @@ class HomeController extends Controller
 
     public function credits()
     {
-        return redirect()->route('home');
-        return view('credits');
+        return view('credits')
+                ->with('logos', $this->sponsorshipLogos);
     }
 
     public function contact()

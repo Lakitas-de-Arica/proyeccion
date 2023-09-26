@@ -25,7 +25,7 @@
                     <a class="nav-link @if( Route::currentRouteName() == 'galleries' ) active @endif" href="{{ route('music') }}">Galerías</a>
                 </li>
                 <li class="nav-item mx-xxl-3 mx-lg-1 mx-md-1">
-                    <a class="nav-link @if( Route::currentRouteName() == 'credits' ) active @endif" href="{{ route('music') }}">Créditos</a>
+                    <a class="nav-link @if( Route::currentRouteName() == 'credits' ) active @endif" href="{{ route('credits') }}">Créditos</a>
                 </li>
                 <li class="nav-item mx-xxl-3 mx-lg-1 mx-md-1">
                     <a class="btn btn-primary btn-sm" href="{{ route('contact') }}">Contacto</a>
