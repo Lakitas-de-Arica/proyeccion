@@ -19,10 +19,10 @@
                     <a class="nav-link @if( Route::currentRouteName() == 'music' ) active @endif" href="{{ route('music') }}">Música</a>
                 </li>
                 <li class="nav-item mx-xxl-3 mx-lg-1 mx-md-1">
-                    <a class="nav-link @if( Route::currentRouteName() == 'members' ) active @endif" href="{{ route('music') }}">Integrantes</a>
+                    <a class="nav-link @if( Route::currentRouteName() == 'members' ) active @endif" href="{{ route('members') }}">Integrantes</a>
                 </li>
                 <li class="nav-item mx-xxl-3 mx-lg-1 mx-md-1">
-                    <a class="nav-link @if( Route::currentRouteName() == 'galleries' ) active @endif" href="{{ route('music') }}">Galerías</a>
+                    <a class="nav-link @if( Route::currentRouteName() == 'galleries' ) active @endif" href="{{ route('galleries') }}">Galerías</a>
                 </li>
                 <li class="nav-item mx-xxl-3 mx-lg-1 mx-md-1">
                     <a class="nav-link @if( Route::currentRouteName() == 'credits' ) active @endif" href="{{ route('credits') }}">Créditos</a>
