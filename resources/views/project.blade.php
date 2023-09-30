@@ -67,12 +67,12 @@
                 <div class="col-md-10 pt-5">
                     <p class="text-center">
                         La música de éste, el primer disco de la comparsa “Proyección”, se encuentra aquí
-                        disponible para ser escuchado en línea o descargado íntegramente en alta calidad (link a sección Música).
+                        disponible para ser <a href="{{ route('music') }}">escuchado en línea o descargado íntegramente en alta calidad</a>.
                         El registro fonográfico se acompaña y complementa con el contenido de las diferentes secciones
-                        de la presente página web, en las que es posible encontrar información relativa a la historia de
-                        la agrupación (link a sección Historia), sus actuales integrantes (link a sección Integrantes),
-                        material gráfico de la comparsa (link a sección Galerías), así como detalles del repertorio
-                        seleccionado para esta grabación (link a sección Música) y los datos de contacto del grupo.
+                        de la presente página web, en las que es posible encontrar información relativa a la <a href="{{ route('story') }}">historia de
+                        la agrupación</a>, sus actuales <a href="{{ route('members') }}">integrantes</a>,
+                        <a href="{{ route('galleries') }}">material gráfico de la comparsa</a>, así como detalles del repertorio
+                        seleccionado para esta <a href="{{ route('music') }}">grabación</a> y los datos de contacto del grupo.
                     </p>
                 </div>
                 <div class="col-md-10 py-5">

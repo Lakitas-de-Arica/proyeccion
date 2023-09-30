@@ -24,8 +24,9 @@
                 <p>© Lakitas Proyección. {{ date('Y') }}</p>
             </div>
             <div class="col-md-6 text-center text-md-end">
-                <a href=""><img src="{{ asset('images/icon-facebook.svg') }}" class="img-fluid"></a>
-                <a href=""><img src="{{ asset('images/icon-instagram.svg') }}" class="img-fluid"></a>
+                <a href="https://web.facebook.com/LakitasProyeccion?mibextid=ZbWKwL&_rdc=1&_rdr" target="_blank"><img src="{{ asset('images/icon-facebook.svg') }}" class="img-fluid"></a>
+                <a href="https://www.instagram.com/lakitasproyeccion/?igshid=YmMyMTA2M2Y=" target="_blank"><img src="{{ asset('images/icon-instagram.svg') }}" class="img-fluid"></a>
+                <a href="https://www.youtube.com/@lakitasdearicaproyeccion1122" target="_blank"><img src="{{ asset('images/icon-youtube.png') }}" class="ms-2 img-fluid" style="height: 39px; width: auto;"></a>
             </div>
         </div>
     </div>

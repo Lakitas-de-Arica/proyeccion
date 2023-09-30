@@ -13,6 +13,7 @@
         @yield('pre_css')
 
         <link rel="stylesheet" href="{{ mix('css/core.css') }}">
+        <link rel="stylesheet" href="{{ mix('css/photoswipe.css') }}">
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
         @yield('css')
@@ -30,6 +31,7 @@
         @yield('pre_js')
 
         <script src="{{ mix('js/core.js') }}"></script>
+        <script src="{{ mix('js/photoswipe.js') }}"></script>
 
         @yield('js')
     </body>

@@ -43,7 +43,7 @@
                         y salseado”. En el caso de “Proyección”, estas cualidades son fruto de su fiato como agrupación y
                         de la vasta trayectoria de sus más antiguos integrantes, muchos de los cuales militaron en emblemáticas
                         comparsas ariqueñas, como <a href="https://lakitaslosmollo.lakitasdearica.cl/" target="_blank">“Lakitas de Arica Los Mollo”</a> y “Generación del Norte”, destacadas por sus
-                        adaptaciones de temas chicha y tropicales andinos (más detalles en la sección <b>Historia</b>).
+                        adaptaciones de temas chicha y tropicales andinos (más detalles en la sección <a href="{{ route('story') }}">Historia</a>).
                     </p>
                     <p class="text-center">
                         La selección musical contenida en este disco es, en resumidas cuentas, fiel reflejo del particular recorrido
@@ -56,9 +56,54 @@
             </div>
         </div>
     </div>
+    <div class="container">
+        <div class="row py-5">
+            @foreach($songs as $song)
+            <div class="col-md-4 song mt-4 p-5">
+                <div class="mb-4 position-relative">
+                    <img src="{{ asset('images/fondo-cancion.png') }}" class="img-fluid">
+                    <div class="position-absolute top-50 start-50 translate-middle play-button" onclick="toggleAudio({{ $loop->index }})">
+                        <img src="{{ asset('images/play.png') }}" class="img-fluid">
+                    </div>
+                    <audio id="audio{{ $loop->iteration }}" src="{{ asset('mp3/'.$song['mp3']) }}"></audio>
+                </div>
+                <p class="mb-0 title-1">{{ $song['title-1'] }}</p>
+                <p class="mb-0 title-2">{{ $song['title-2'] }}</p>
+                <p class="mb-0 disk">Lakitas Proyección de Arica (2023)</p>
+            </div>
+            @endforeach
+        </div>
+    </div>
 
 @endsection
 
 @section('js')
+
+    <script>
+        var audioElements = document.getElementsByTagName('audio');
+        var playButtons = document.getElementsByClassName('play-button');
+
+        function toggleAudio(index) {
+            var audio = audioElements[index];
+            var button = playButtons[index];
+
+            for (var i = 0; i < audioElements.length; i++) {
+                if (i !== index && !audioElements[i].paused) {
+                    audioElements[i].pause();
+                    playButtons[i].innerHTML = '<img src="{{ asset('images/play.png') }}" class="img-fluid">';
+                }
+            }
+
+            if (audio.paused) {
+                audio.play();
+                button.innerHTML = '<img src="{{ asset('images/pause.png') }}" class="img-fluid">';
+            } else {
+                audio.pause();
+                audio.currentTime = 0; // Reiniciar el audio al principio
+                button.innerHTML = '<img src="{{ asset('images/play.png') }}" class="img-fluid">';
+            }
+        }
+    </script>
+
     @stack('scripts')
 @endsection

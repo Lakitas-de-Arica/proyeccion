@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\File;
 
 class HomeController extends Controller
 {
@@ -13,6 +15,11 @@ class HomeController extends Controller
         'lak__4.svg',
         'lak__5.svg',
         'lak__6.svg',
+    ];
+
+    protected $galleries = [
+        'making-of' => 'Making of',
+        'alto-ramirez-2019' => 'Alto Ramirez 2019',
     ];
 
     public function index()
@@ -33,7 +40,70 @@ class HomeController extends Controller
 
     public function music()
     {
-        return view('music');
+        $songs = [
+            [
+                'title-1' => 'Diana Proye/ Recordando a Chapatín',
+                'title-2' => '(diana / huayno)',
+                'mp3'     => '01 - Diana Proye - Recordando a Chapatín.mp3',
+            ],
+            [
+                'title-1' => 'Salto del recuerdo',
+                'title-2' => '(takirari)',
+                'mp3'     => '02 - Salto del recuerdo.mp3',
+            ],
+            [
+                'title-1' => 'Todos vuelven',
+                'title-2' => '(vals)',
+                'mp3'     => '03 - Todos vuelven.mp3',
+            ],
+            [
+                'title-1' => 'Mil amores',
+                'title-2' => '(cumbia)',
+                'mp3'     => '04 - Mil amores.mp3',
+            ],
+            [
+                'title-1' => 'Cuando florezca el chuño',
+                'title-2' => '(toba)',
+                'mp3'     => '05 - Cuando florezca el chuño.mp3',
+            ],
+            [
+                'title-1' => 'El payacito / Culpable de este dolor',
+                'title-2' => '(cumbias)',
+                'mp3'     => '06 - El payasito - Culpable de este dolor.mp3',
+            ],
+            [
+                'title-1' => 'Mi ilusión / Carnaval de Oruro',
+                'title-2' => '(morenadas)',
+                'mp3'     => '07 - Mi ilusión - Carnaval de Oruro.mp3',
+            ],
+            [
+                'title-1' => 'Amor y odio',
+                'title-2' => '(cumbia)',
+                'mp3'     => '08 - Amor y odio.mp3',
+            ],
+            [
+                'title-1' => 'El amor estuvo aqui',
+                'title-2' => '(bolero)',
+                'mp3'     => '09 - El amor estuvo aqui.mp3',
+            ],
+            [
+                'title-1' => 'Lo que él me hizo',
+                'title-2' => '(cumbia)',
+                'mp3'     => '10 - Lo que él me hizo.mp3',
+            ],
+            [
+                'title-1' => 'Sufrire, llorare',
+                'title-2' => '(cumbia)',
+                'mp3'     => '11 - Sufriré lloraré.mp3',
+            ],
+            [
+                'title-1' => 'Entrando a Illapata',
+                'title-2' => '(huayno)',
+                'mp3'     => '12 - Entrando a Illapata.mp3',
+            ],
+        ];
+
+        return view('music')->with('songs', $songs);
     }
 
     public function members()
@@ -120,10 +190,34 @@ class HomeController extends Controller
                 ->with('members', $members);
     }
 
-    public function galleries()
+    public function galleries($section = null)
     {
-        return redirect()->route('home');
-        return view('galleries');
+        if ($section) {
+            if (array_key_exists($section, $this->galleries)) {
+
+                $photos = Array();
+
+                $directory = public_path("images/$section");
+                $files = File::files($directory);
+
+                foreach ($files as $file) {
+                    $f = asset('images/'.$section.'/'.$file->getFilename());
+                    $infoImagen = getimagesize(public_path('images/'.$section.'/'.$file->getFilename()));
+
+                    $photos[] = [
+                        'file' => $f,
+                        'width' => $infoImagen[0],
+                        'height' => $infoImagen[1],
+                    ];
+                }
+
+                return view('gallery-section')
+                        ->with('title', $this->galleries[$section])
+                        ->with('photos', $photos);
+            }
+        }
+
+        return view('gallery');
     }
 
     public function credits()
@@ -134,7 +228,6 @@ class HomeController extends Controller
 
     public function contact()
     {
-        return redirect()->route('home');
         return view('contact');
     }
 

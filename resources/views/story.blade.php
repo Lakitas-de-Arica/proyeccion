@@ -34,7 +34,7 @@
                     </p>
                     <p class="text-center">
                         Sus filas alternan “sangre joven” con sopladores curtidos al alero de
-                        reconocidas zampoñadas ariqueñas, como “Lakitas de Arica Los Mollo” y
+                        reconocidas zampoñadas ariqueñas, como <a href="https://lakitaslosmollo.lakitasdearica.cl/">“Lakitas de Arica Los Mollo”</a> y
                         “Generación del Norte”. Estas comparsas, conformadas a mediados de los 80’
                         y fines de los 90’, respectivamente, representan diferentes oleadas de
                         músicos nortinos que comparten un marcado gusto por las adaptaciones de
@@ -49,8 +49,8 @@
                     </p>
                     <p class="text-center">
                         Las adaptaciones y creaciones de “Proyección” entremezclan temas de vertiente
-                        tradicional y folklórica con cumbias tropicales andinas desde el chicha al
-                        electrónico o sound (link a sección Música). Versatilidad y carácter musical
+                        tradicional y folklórica con cumbias tropicales andinas desde el <a href="{{ route('music') }}">chicha al
+                        electrónico o sound</a>. Versatilidad y carácter musical
                         son así las cualidades que los definen y de las que hacen gala en sus presentaciones,
                         sea en las fiestas religiosas de los poblados del interior de Arica e Iquique,
                         o en cumpleaños, bautizos, challas, velorios o funerales celebrados en la urbe ariqueña.
@@ -64,6 +64,15 @@
                         nortino, donde el cariño y reconocimiento de la gente se transforma en el
                         combustible que los anima a seguir adelante, creando, tocando y deleitando.
                     </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4">
                 </div>
             </div>
         </div>
