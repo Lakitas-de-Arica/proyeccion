@@ -45,7 +45,7 @@
                         Es en estas emblemáticas comparsas ariqueñas que “Lakitas Proyección de Arica”
                         encuentra los referentes y la inspiración para desarrollar su propio lenguaje musical.
                         Un lenguaje depurado con creatividad y trabajo que se transforma en el sello
-                        que impregna el nutrido repertorio de la agrupación.
+                        que impregna el nutrido repertorio de la agrupación. <a href="{{ route('music') }}">(más detalles en sección Música)</a>
                     </p>
                     <p class="text-center">
                         Las adaptaciones y creaciones de “Proyección” entremezclan temas de vertiente

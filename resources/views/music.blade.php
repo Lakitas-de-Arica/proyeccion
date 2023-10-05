@@ -13,7 +13,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-10 py-5">
                     <h1 class="text-center mb-5">Música</h1>
-                    <p class="text-center fw-bold">
+                    <p class="text-center">
                         El repertorio elegido por “Lakitas de Arica Proyección” para este disco, ofrece un recorrido por
                         varias épocas y estilos musicales, que alterna creaciones de su propia autoría con adaptaciones
                         de temas de otros intérpretes.
