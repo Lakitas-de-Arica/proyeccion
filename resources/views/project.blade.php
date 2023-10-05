@@ -98,6 +98,8 @@
                         Durante la etapa de postproducción de este proyecto recibimos con gran pesar la noticia del
                         fallecimiento del soplador de “Proyección”, Josué Vilca. Este sorpresivo hecho fue un duro golpe
                         para la comparsa, que quiso reconocer a Josué con el fruto mismo de su trabajo y despedirlo con las siguientes palabras: <br>
+                    </p>
+                    <p class="text-center mt-5">
                         <i>“Este disco está dedicado a nuestro gran amigo y compañero de fila Josué Héctor Vilca Flores, quién ha partido de
                         este mundo pero sigue vivo en nuestro sonido y el amor por la zampoña”.</i>
                     </p>
