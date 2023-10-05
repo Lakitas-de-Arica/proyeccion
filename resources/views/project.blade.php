@@ -110,7 +110,7 @@
                         producción musical pueda ser conocida y disfrutada en otros territorios y por otros públicos.
                         Con este afán hemos generado a lo largo de los años alianzas con instituciones tanto a nivel
                         regional como nacional e internacional, aliados con la capacidad de difundir y dar una mayor
-                        accesibilidad a este tipo de obras a través de sus propias plataformas y archivos (link a sección Créditos).
+                        accesibilidad a este tipo de obras a través de sus propias plataformas y archivos <a href="{{ route('credits') }}">(Créditos).</a>
                     </p>
                 </div>
                 <div class="col-md-10 py-5">
