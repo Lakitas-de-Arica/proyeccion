@@ -67,7 +67,7 @@
                 <div class="col-md-12 py-5 border-top text-center">
                     <h1 class="mb-5">Agradecimientos</h1>
                     <p class="text-center">Parcela/estudio: Familias Flores y Becerra.</p>
-                    <p class="text-center">Colaciones: Berta Lazcano y famila / Pensión La Mami Berta, Los Misioneros #254, San Miguel de Azapa</p>
+                    <p class="text-center">Colaboraciones: Berta Lazcano y famila / Pensión La Mami Berta, Los Misioneros #254, San Miguel de Azapa</p>
                 </div>
             </div>
         </div>
